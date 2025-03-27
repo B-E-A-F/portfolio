@@ -1,5 +1,4 @@
 <script lang="ts">
-  import Twitter from "./../shared/assets/Twitter.png";
   import Linkedin from "./../shared/assets/LinkedIn.png";
   import Github from "./../shared/assets/Github.png";
 </script>
@@ -16,9 +15,6 @@
     <div class="flex flex-col justify-between items-center h-full">
       <h1>Bea</h1>
       <div class="flex flex-row gap-4">
-        <a class="info-button" href="https://x.com/_B_E_A_F_" target="_blank">
-          <img src={Twitter} alt="icon for twitter" />
-        </a>
         <a
           class="info-button"
           href="https://github.com/B-E-A-F"
