@@ -69,6 +69,13 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  cursor: grab;
+  user-select: none;
+  touch-action: none;
+}
+
+.header.dragging {
+  cursor: grabbing;
 }
 
 .logo {
