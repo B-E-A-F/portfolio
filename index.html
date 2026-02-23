@@ -1,14 +1,46 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/ekmas/cs16.css@main/css/cs16.min.css">
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>B-E-A-F</title>
-  </head>
-  <body>
-    <div id="app"></div>
-    <script type="module" src="/src/main.js"></script>
-  </body>
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/ekmas/cs16.css@main/css/cs16.min.css">
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <link rel="icon" type="image/svg+xml" href="/x.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>B-E-A-F</title>
+</head>
+
+<body>
+  <div class="positioner">
+    <div class="outer mw">
+      <div class="header">
+        <h1 style="font-size: small;">B - E - A - F</h1>
+        
+        <button disabled class="cs-btn" style="padding: 0px; line-height: 0px;"><img style="width: 14px; opacity: 50%;" src="/x.svg" alt="X" /></button>
+      </div>
+      <div class="cs-tabs mw">
+        <input class="radiotab" name="tabs" tabindex="1" type="radio" id="tabone" checked="checked" />
+        <label class="label" for="tabone">Resume</label>
+        <div class="panel" tabindex="1">
+          <h2>B - E - A - F</h2>
+          <p>Tab content...</p>
+        </div>
+        <input class="radiotab" tabindex="1" name="tabs" type="radio" id="tabtwo" />
+        <label class="label" for="tabtwo">Projects</label>
+        <div class="panel" tabindex="1">
+          <h2>Tab Two Content</h2>
+          <p>Tab content...</p>
+        </div>
+        <input class="radiotab" tabindex="1" name="tabs" type="radio" id="tabthree" />
+        <label class="label" for="tabthree">Socials</label>
+        <div class="panel" tabindex="1">
+          <h2>Tab Three Content</h2>
+          <p>Tab content...</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script type="module" src="/src/main.js"></script>
+</body>
+
 </html>
