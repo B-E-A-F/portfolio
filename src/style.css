@@ -68,6 +68,24 @@ body {
   width: 100%;
 }
 
+table {
+  border-collapse: collapse; /* removes extra spacing between cells */
+  background-color: #3e4637;
+}
+
+tr:first-child > th,
+tr:first-child > td {
+  height: 16px;        /* target height */
+  line-height: 16px;   /* match height */
+  font-size: 16px;     /* optional, if text is too tall */
+  white-space: nowrap; /* optional */
+  overflow: hidden;    /* optional */
+  text-align: left;
+  padding-left:5px;
+  font-weight: 500;
+  background-color: var(--bg);
+}
+
 .header {
   display: flex;
   justify-content: space-between;

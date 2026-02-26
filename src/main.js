@@ -1,7 +1,5 @@
 import './style.css'
 
-console.log("Hi :3");
-
 const draggableWindow = document.querySelector('.outer.mw');
 const dragHandle = draggableWindow?.querySelector('.header');
 
