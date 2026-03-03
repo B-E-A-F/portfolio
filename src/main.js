@@ -1,5 +1,21 @@
 import './style.css'
 
+const selectableRows = document.querySelectorAll('tr.selectable-row');
+
+if (selectableRows.length > 0) {
+	selectableRows.forEach((row) => {
+		row.addEventListener('click', () => {
+			selectableRows.forEach((candidateRow) => {
+				candidateRow.classList.remove('selectable-row-selected');
+				candidateRow.classList.add('selectable-row');
+			});
+
+			row.classList.remove('selectable-row');
+			row.classList.add('selectable-row-selected');
+		});
+	});
+}
+
 const draggableWindow = document.querySelector('.outer.mw');
 const dragHandle = draggableWindow?.querySelector('.header');
 
